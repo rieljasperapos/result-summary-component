@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* Primary */
+  --Light-red: hsl(0, 100%, 67%);
+  --Orangey-yellow: hsl(39, 100%, 56%);
+  --Green-teal: hsl(166, 100%, 37%);
+  --Cobalt-blue: hsl(234, 85%, 45%);
+
+  /* Gradients */
+
+  /* Background */
+  --Light-slate-blue: hsl(252, 100%, 67%);
+  --Light-royal-blue: hsl(241, 81%, 54%);
+  /* Circle */
+  --Violet-blue: hsla(256, 72%, 46%, 1);
+  --Persian-blue: hsla(241, 72%, 46%, 0);
+
+  /* Neutral */
+  --White: hsl(0, 0%, 100%);
+  --Pale-blue: hsl(221, 100%, 96%);
+  --Light-lavender: hsl(241, 100%, 89%);
+  --Dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+body {
+  background-color: var(--White);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+img {
+  margin-right: 10px;
+}
+
+.black-score {
+  font-weight: bold;
+  color: black;
+}
+.grey-total {
+  font-weight: lighter;
+  color: gray;
+}
+
+.container {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display: flex;
+  width: 600px;
+  border-radius: 20px;
+  justify-content: center;
+}
+
+.left {
+  color: #fff;
+  border-radius: 20px;
+  padding: 20px;
+  width: 40%;
+  background: linear-gradient(180deg, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  background-color: var(--Light-royal-blue);
+  text-align: center;
+}
+.left-text {
+  color: var(--Light-lavender);
+  padding: 20px;
+  /* align-items: center;
+    display: flex;
+    flex-direction: column; */
+}
+.left-text h3 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  color: var(--White);
+  font-size: 20px;
+}
+.left-text p {
+  font-size: 13px;
+}
+.left h4 {
+  color: var(--Light-lavender);
+  padding: 20px;
+}
+.right {
+  padding: 40px;
+  width: 50%;
+}
+
+.score-left {
+  padding: 40px;
+  width: 74px;
+  height: 74px;
+  border-radius: 100%;
+  background-color: rgba(75, 0, 130, 0.3);
+  background: linear-gradient(
+    180deg,
+    hsla(256, 72%, 46%, 1),
+    hsla(241, 72%, 46%, 0)
+  );
+  /* box-shadow: inset 2px 2px 12px 2px hsla(256, 72%, 46%, 1); */
+  margin: auto;
+}
+.your-score {
+  font-size: 54px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.right h4 {
+  margin-bottom: 20px;
+}
+
+.scores {
+  font-size: 15px;
+}
+
+.score-con {
+  display: flex;
+}
+
+.score-reaction {
+  display: flex;
+  justify-content: space-between;
+  color: var(--Light-red);
+  padding: 12px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  background-color: hsla(0, 100%, 67%, 0.1);
+}
+
+.score-memory {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+  margin-bottom: 12px;
+  color: var(--Orangey-yellow);
+  background-color: hsla(39, 100%, 56%, 0.1);
+  border-radius: 10px;
+}
+
+.score-verbal {
+  display: flex;
+  color: var(--Green-teal);
+  background-color: hsla(166, 100%, 37%, 0.1);
+  margin-bottom: 12px;
+  padding: 12px;
+  justify-content: space-between;
+  border-radius: 10px;
+}
+
+.score-visual {
+  display: flex;
+  color: var(--Cobalt-blue);
+  background-color: hsla(234, 85%, 45%, 0.1);
+  margin-bottom: 12px;
+  justify-content: space-between;
+  padding: 12px;
+  border-radius: 10px;
+}
+
+button {
+  color: hsl(0, 0%, 100%);
+  padding: 15px;
+  border-radius: 20px;
+  width: 100%;
+  margin-top: 20px;
+  background-color: var(--Dark-gray-blue);
+}
+
+.attribution {
+  margin-top: 50px;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 760px) {
+  .left {
+    width: 100%;
+    padding: 0px;
+    border-radius: 0px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  .container {
+    box-shadow: 0px 0px 0px 0px;
+    width: 100%;
+    flex-direction: column;
+    border-radius: 0px;
+    overflow: hidden;
+    padding: 0px;
+  }
+  .right {
+    width: 80%;
+    margin: auto;
+  }
+}
